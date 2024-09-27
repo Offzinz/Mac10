@@ -1,0 +1,247 @@
+.headerback {
+    background-color: #01203b; /* Define a cor de fundo do cabeçalho */
+}
+
+.container {
+    display: flex; /* Usa flexbox para layout flexível */
+    justify-content: space-between; /* Espaça os itens com espaço entre eles */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+}
+
+.menu-direita {
+    margin-left: auto; /* Empurra o menu para a direita */
+}
+
+.menu-direita ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    margin: 0; /* Remove a margem padrão da lista */
+    display: flex; /* Exibe os itens da lista em linha */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+}
+
+.menu-direita ul li {
+    margin-left: 1rem; /* Espaçamento à esquerda entre os itens do menu */
+}
+
+.menu-direita ul li a {
+    border-bottom: 2px solid transparent; /* Borda inferior invisível para manter a estrutura */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #000; /* Cor do texto dos links */
+    cursor: pointer; /* Indica que o item é clicável */
+    padding: 0.5rem 1rem; /* Espaçamento interno dos links */
+    background-color: #e5fcfd; /* Cor de fundo do item do menu */
+    border-radius: 5px; /* Arredonda os cantos dos botões */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves para hover */
+}
+
+.menu-direita ul li a:hover {
+    background-color: #50d2fa; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+    border-bottom: 2px solid #c0f6ff; /* Adiciona borda inferior ao passar o mouse */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+}
+
+.h2ref {
+    text-align: center; /* Centraliza o texto do h2 */
+    color: #3392af; /* Define a cor do texto */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Define a família de fontes */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.logo {
+    display: flex; /* Usa flexbox para layout flexível */
+    margin: 2rem 0; /* Espaçamento superior e inferior da logo */
+}
+
+.coluna1, .coluna2, .coluna3 {
+    display: flex; /* Usa flexbox para layout flexível */
+    justify-content: center; /* Centraliza o conteúdo dentro da coluna */
+    margin-bottom: 1rem; /* Espaçamento inferior nas colunas */
+}
+
+/* Rodapé */
+.footer {
+    display: flex; /* Usa flexbox para layout flexível no rodapé */
+    justify-content: space-between; /* Espaça os itens com espaço entre eles */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    padding: 1rem 2rem; /* Adiciona espaço interno ao rodapé */
+    background-color: #01203b; /* Cor de fundo do rodapé */
+}
+
+.footer p {
+    margin: 0; /* Remove margens do parágrafo */
+    color: #fff; /* Define a cor do texto */
+}
+
+.footer ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    margin: 0; /* Remove a margem padrão da lista */
+    display: flex; /* Exibe os itens da lista em linha */
+}
+
+.footer ul li {
+    margin-left: 1rem; /* Espaçamento à esquerda entre os itens do rodapé */
+}
+
+.footer ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #fff; /* Define a cor do texto dos links do rodapé */
+    padding: 0.5rem 1rem; /* Espaçamento interno dos links do rodapé */
+    border-radius: 5px; /* Arredonda os cantos dos botões do rodapé */
+    transition: background-color 0.3s; /* Transição suave para hover */
+}
+
+.footer ul li a:hover {
+    background-color: #50d2fa; /* Cor de fundo ao passar o mouse no rodapé */
+}
+
+.text {
+    color: #000; /* Define a cor do texto */
+}
+
+.space {
+    margin: 2rem 1rem 0; /* Define margens para espaçamento */
+}
+
+.button {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin: 2 1rem 0; /* Define margens para os botões */
+}
+
+.body {
+    font-family: Arial, sans-serif; /* Define a família de fontes do corpo */
+}
+
+.content {
+    padding: 1.5rem; /* Define o espaçamento interno do conteúdo */
+}
+
+.popup {
+    list-style: none; /* Remove os marcadores da lista do pop-up */
+    position: fixed; /* Posiciona o pop-up fixo na tela */
+    bottom: 6.0rem; /* Distância do fundo da tela */
+    right: 3.0rem; /* Distância da direita da tela */
+    background-color: #bde8f7; /* Cor de fundo do pop-up */
+    color: #000; /* Cor do texto do pop-up */
+    padding: 1rem 1.5rem; /* Espaçamento interno do pop-up */
+    border-radius: 8px; /* Arredonda os cantos do pop-up */
+    display: none; /* Inicialmente oculto */
+    z-index: 1000; /* Coloca o pop-up acima de outros elementos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transições suaves para o pop-up */
+    opacity: 0; /* Começa invisível */
+    transform: translateY(20px); /* Inicialmente deslocado para baixo */
+}
+
+.popup.show {
+    display: block; /* Exibe o pop-up */
+    opacity: 1; /* Define opacidade total */
+    transform: translateY(0); /* Move para a posição original */
+}
+.card {
+    background-color: #ffffff; /* Cor de fundo do card */
+    border-radius: 10px; /* Arredonda os cantos do card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+    margin: 1rem; /* Margem ao redor do card */
+}
+
+.card-img-top {
+    border-top-left-radius: 10px; /* Arredonda os cantos superiores */
+    border-top-right-radius: 10px; /* Arredonda os cantos superiores */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Tamanho da fonte do título */
+    color: #3392af; /* Cor do título */
+    margin-bottom: 0.5rem; /* Espaço abaixo do título */
+    font-weight: bold; /* Negrito para destaque */
+}
+
+.card-text {
+    font-size: 1rem; /* Tamanho da fonte do conteúdo */
+    color: #333; /* Cor do texto */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+.body {
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-family: Arial, sans-serif;
+}
+.h2 {
+    color: #01203b;
+}
+.section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Muda a direção para coluna em telas menores */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+
+    .menu-direita {
+        width: 100%; /* Faz o menu ocupar toda a largura em telas menores */
+        display: flex; /* Permite que o menu continue flexível */
+        justify-content: flex-end; /* Mantém o menu à direita */
+        margin-top: 1rem; /* Adiciona espaço acima do menu */
+    }
+
+    .menu-direita ul {
+        flex-direction: column; /* Muda a direção para coluna em telas menores */
+        justify-content: flex-start; /* Alinha os itens à esquerda */
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    .menu-direita ul li {
+        margin: 0.5rem 0; /* Ajuste o espaçamento entre os itens do menu */
+    }
+
+    .footer {
+        flex-direction: column; /* Muda a direção para coluna no rodapé em telas menores */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+        padding: 1rem; /* Adiciona mais espaço interno */
+    }
+
+    .footer p {
+        margin-bottom: 0.5rem; /* Espaçamento inferior no texto do rodapé */
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+
+    .footer ul {
+        width: 100%; /* Faz a lista ocupar toda a largura */
+        justify-content: flex-start; /* Alinha os links à esquerda */
+        margin-top: 0.5rem; /* Espaçamento superior para a lista */
+    }
+
+    .footer ul li {
+        margin-left: 0.5rem; /* Ajusta o espaçamento entre os itens do menu do rodapé */
+    }
+}
+/* Media Queries */
+@media (max-width: 480px) {
+    .menu-direita ul {
+        flex-direction: column; /* Altera para coluna em telas muito pequenas */
+    }
+
+    .footer {
+        padding: 0.5rem; /* Ajusta o espaçamento interno do rodapé */
+    }
+
+    .footer ul li {
+        margin-left: 0; /* Remove a margem lateral em telas pequenas */
+        margin-top: 0.5rem; /* Ajusta a margem superior */
+    }
+}
